@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+:root {
+  --nav-width: 92px;
+  --first-color: #0C5DF4;
+  --bg-color: #12192C;
+  --sub-color: #B6CEFC;
+  --z-fixed: 100;
+  --body-font-fam: "Poppins", sans-serif;
+  --normal-font-size: 1rem;
+  --small-font-size: .875rem;
+}
+
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  padding: 2rem 0 0 6.75rem;
+  font-family: var(--body-font-fam);
+  font-size: var(--normal-font-size);
+  transition: 0.5s;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.lg-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: var(--nav-width);
+  height: 100vh;
+  background-color: var(--bg-color);
+  color: #FFF;
+  padding: 1.5rem 1.5rem 2rem;
+  transition: 0.5s;
+  z-index: var(--z-index);
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+}
+.nav-brand {
+  display: grid;
+  grid-template-columns: max-content max-content;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+.nav-toggle {
+  font-size: 1.25rem;
+  padding: 0.75rem;
+  cursor: pointer;
+}
+.nav-logo {
+  color: #FFF;
+  font-weight: 600;
+}
+.nav-link {
+  display: grid;
+  grid-template-columns: max-content max-content;
+  align-items: center;
+  column-gap: 0.75rem;
+  padding: 0.75rem;
+  color: #FFF;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.nav-link:hover {
+  background-color: var(--first-color);
+}
+.nav-icon {
+  font-size: 1.25rem;
+}
+.nav-name {
+  font-size: var(--small-font-size);
+}
+
+.collapse {
+  grid-template-columns: 20px max-content 1fr;
+}
+.collapse-link {
+  justify-self: flex-end;
+  transition: 0.5s;
+}
+.collapse-menu {
+  display: none;
+  padding: 0.75rem 2.25rem;
+  transition: 0.5s;
+}
+.collapse-sublink {
+  color: var(--sub-color);
+  font-size: var(--small-font-size);
+}
+.collapse-sublink:hover {
+  color: #FFF;
+}
+
+.showCollapse {
+  display: block;
+  transition: 0.5s;
+}
+
+.expander-menu {
+  width: calc(var(--nav-width) + 9.25rem);
+}
+
+.body-pd {
+  padding: 1.3rem 0 0 16rem;
+}
+
+.active {
+  background-color: var(--first-color);
+}
+
+.rotate {
+  transform: rotate(180deg);
+}
+
+/*# sourceMappingURL=style.css.map */

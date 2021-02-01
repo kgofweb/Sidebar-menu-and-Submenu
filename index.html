@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Sidebar menu</title>
+</head>
+<body id="body-pd">
+  <div class="lg-navbar" id="navbar">
+    <nav class="nav">
+      <div>
+        <div class="nav-brand">
+          <ion-icon name="menu-outline" class="nav-toggle" id="nav-toggle"></ion-icon>
+          <a href="#" class="nav-logo">Chat App</a>
+        </div>
+        <div class="nav-list">
+          <a href="#" class="nav-link active">
+            <ion-icon name="home-outline" class="nav-icon"></ion-icon>
+            <span class="nav-name">Dashboard</span>
+          </a>
+          <a href="#" class="nav-link">
+            <ion-icon name="chatbubbles-outline" class="nav-icon"></ion-icon>
+            <span class="nav-name">Messenger</span>
+          </a>
+
+          <div class="nav-link collapse">
+            <ion-icon name="folder-outline" class="nav-icon"></ion-icon>
+            <span class="nav-name">Projects</span>
+
+            <ion-icon name="chevron-down-outline" class="collapse-link"></ion-icon>
+
+            <ul class="collapse-menu">
+              <a href="#" class="collapse-sublink">Data</a>
+              <a href="#" class="collapse-sublink">Group</a>
+              <a href="#" class="collapse-sublink">Members</a>
+            </ul>
+          </div>
+
+          <a href="#" class="nav-link">
+            <ion-icon name="pie-chart-outline" class="nav-icon"></ion-icon>
+            <span class="nav-name">Analytics</span>
+          </a>
+          <div class="nav-link collapse">
+            <ion-icon name="people-outline" class="nav-icon"></ion-icon>
+            <span class="nav-name">Team</span>
+
+            <ion-icon name="chevron-down-outline" class="collapse-link"></ion-icon>
+
+            <ul class="collapse-menu">
+              <a href="#" class="collapse-sublink">Data</a>
+              <a href="#" class="collapse-sublink">Group</a>
+              <a href="#" class="collapse-sublink">Members</a>
+            </ul>
+          </div>
+          <a href="#" class="nav-link">
+            <ion-icon name="settings-outline" class="nav-icon"></ion-icon>
+            <span class="nav-name">Settings</span>
+          </a>
+        </div>
+      </div>
+
+      <a href="#" class="nav-link">
+        <ion-icon name="log-out-outline" class="nav-icon"></ion-icon>
+        <span class="nav-name">Log Out</span>
+      </a>
+    </nav>
+  </div>
+
+  <h1>Dashboard</h1>
+  
+  <!-- IonIcons -->
+  <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+  <!-- JS -->
+  <script src="./js/app.js"></script>
+</body>
+</html>
